@@ -1,0 +1,169 @@
+<layout-row id="RowLayout1">
+	<layout-column id="ColumnLayout1">
+		<layout-row id="RowLayout2">
+			<layout-column id="ColumnLayout4">
+				<h3 id="Heading34">CPU</h3>
+				<layout-row id="RowLayout25">
+					<davinci-value-display id="ValueDisplay17" value="Overall (%):"
+						style="flex-grow: 1; flex-shrink: 0; align-self: center">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay7" style="align-self: center">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateOverallCPULoadDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout26">
+					<curie-table id="DynamicTable1" style="flex-grow: 1; flex-shrink: 0">
+						<curie-table-column id="CoreNum" header="Core #">
+						</curie-table-column>
+						<curie-table-column id="CoreUsage" header="Usage (%)">
+						</curie-table-column>
+						<crown-on property="data"
+							crown-event="picoScan/UpdateDetailedCPULoadDisplay">
+						</crown-on>
+					</curie-table>
+				</layout-row>
+			</layout-column>
+			<layout-column id="ColumnLayout8">
+				<layout-row id="RowLayout34">
+					<h3 id="Heading36">Network</h3>
+				</layout-row>
+				<layout-row id="RowLayout37">
+					<davinci-value-display id="ValueDisplay20" value="Sent (Mb/sec):"
+						style="flex-grow: 1; flex-shrink: 0">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay3">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateSentBytesPerSecDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout38">
+					<davinci-value-display id="ValueDisplay21" value="Recv (Mb/sec):"
+						style="flex-grow: 1; flex-shrink: 0">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay2" value="">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateReceivedBytesPerSecDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+			</layout-column>
+			<layout-column id="ColumnLayout2">
+				<layout-row id="RowLayout8">
+					<h3 id="Heading31">AppData</h3>
+				</layout-row>
+				<layout-row id="RowLayout10">
+					<davinci-value-display id="ValueDisplay15" value="Memory (Mb):">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay9">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateAppMemoryUsedBytesDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout13">
+					<davinci-value-display id="ValueDisplay25" value="Size (Mb):">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay10">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateAppDataUsedBytesDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout14">
+					<davinci-value-display id="ValueDisplay16" value="Capacity (Mb):"
+						style="flex-grow: 1; flex-shrink: 0">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay11">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateAppDataCapacityDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout18">
+					<davinci-value-display id="ValueDisplay24" value="Usage (%):">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay12">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateAppDataUsageDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout19">
+					<davinci-value-display id="ValueDisplay23" value="Status:">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay13">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateAppStateDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout20">
+					<davinci-value-display id="ValueDisplay22" value="Info:">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay14">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateAppAdditionalInfoDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+			</layout-column>
+			<layout-column id="ColumnLayout6">
+				<layout-row id="RowLayout27">
+					<h3 id="Heading35">Memory</h3>
+				</layout-row>
+				<layout-row id="RowLayout31">
+					<davinci-value-display id="ValueDisplay19" value="Used (Mb):">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay4">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateMemoryUsedBytesDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout32">
+					<davinci-value-display id="ValueDisplay27" value="Capacity (Mb):"
+						style="flex-grow: 1; flex-shrink: 0">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay5">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateMemoryCapacityDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+				<layout-row id="RowLayout33">
+					<davinci-value-display id="ValueDisplay26" value="Usage (%):">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay6">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateMemoryUsageDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+			</layout-column>
+			<layout-column id="ColumnLayout10">
+				<layout-row id="RowLayout39">
+					<h3 id="Heading37">Temperature</h3>
+				</layout-row>
+				<layout-row id="RowLayout41">
+					<davinci-value-display id="ValueDisplay28" value="Temperature (C):">
+					</davinci-value-display>
+					<davinci-value-display id="ValueDisplay1">
+						<crown-on property="value"
+							crown-event="picoScan/UpdateTemperatureDisplay">
+						</crown-on>
+					</davinci-value-display>
+				</layout-row>
+			</layout-column>
+		</layout-row>
+		<layout-row id="RowLayout3">
+		</layout-row>
+	</layout-column>
+	
+  
+</layout-row>
+<sick-viewer2d id="Viewer2D1" hidden="" viewer-id="ViewerDiagnostics"
+		style="width: 100%; height: 100%">
+	</sick-viewer2d>

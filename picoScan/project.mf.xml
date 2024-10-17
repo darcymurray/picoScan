@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest>
+    <application name="picoScan">
+        <crown name="picoScan">
+            <desc>user script</desc>
+            <serves>
+                <event name="UpdateTemperatureDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateAppDataUsedBytesDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateAppDataCapacityDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateAppDataUsageDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateAppMemoryUsedBytesDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateAppStateDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateAppAdditionalInfoDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateOverallCPULoadDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateDetailedCPULoadDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateMemoryUsedBytesDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateMemoryCapacityDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateMemoryUsageDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateSentBytesPerSecDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateReceivedBytesPerSecDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+            </serves>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">2.5.0</meta>
+        <meta key="priority">low</meta>
+        <meta key="tags">Scan</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="copy-protected">false</meta>
+        <entry default="Scanner.lua" path="scripts"/>
+    </application>
+</manifest>
