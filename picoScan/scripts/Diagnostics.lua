@@ -65,3 +65,4 @@ Script.serveEvent('picoScan.UpdateMemoryUsageDisplay', 'UpdateMemoryUsageDisplay
 Script.serveEvent('picoScan.UpdateSentBytesPerSecDisplay', 'UpdateSentBytesPerSecDisplay')
 Script.serveEvent('picoScan.UpdateReceivedBytesPerSecDisplay', 'UpdateReceivedBytesPerSecDisplay')
 Script.serveEvent('picoScan.UpdateTemperatureDisplay', 'UpdateTemperatureDisplay')
+Diagnostics.UpdateDiagnosticsDisplay()

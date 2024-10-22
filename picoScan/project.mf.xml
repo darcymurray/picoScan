@@ -68,6 +68,6 @@
         <meta key="tags">Scan</meta>
         <meta key="read-protected">false</meta>
         <meta key="copy-protected">false</meta>
-        <entry default="Scanner.lua" path="scripts"/>
+        <entry default="Main.lua" path="scripts"/>
     </application>
 </manifest>
