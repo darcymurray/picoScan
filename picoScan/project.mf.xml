@@ -60,6 +60,30 @@
                     <desc/>
                     <param desc="" multiplicity="1" name="parametername" type="string"/>
                 </event>
+                <event name="UpdatePoint1Display">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdatePoint2Display">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateCentrePointDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="UpdateDistanceFromOriginDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="Updatep1DistanceFromOriginDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
+                <event name="Updatep2DistanceFromOriginDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
             </serves>
         </crown>
         <meta key="author">AppSpace Sample</meta>
