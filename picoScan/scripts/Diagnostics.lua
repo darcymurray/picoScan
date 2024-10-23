@@ -1,3 +1,5 @@
+require("UIUtils")
+
 -- Diagnostics 
 Diagnostics = {}
 Diagnostics.View = View.create('ViewerDiagnostics')

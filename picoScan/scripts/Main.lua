@@ -1,6 +1,6 @@
-require("UIUtils")
 require("Diagnostics")
 require("Viewer")
+require("Decorations")
 require("Scanner")
 
 -- -- Other data output type receiver

@@ -4,18 +4,22 @@
 		style="width: 75%; height: 100%; flex-shrink: 0">
 	</sick-viewer2d>
 	<layout-column id="ColumnLayout1">
-		<h4 id="Heading41">Line Segment Coordinates</h4>
+		<h4 id="Heading41">Line Segment</h4>
 		<davinci-value-display id="ValueDisplay1" label="Point1">
 			<crown-on property="value" crown-event="picoScan/UpdatePoint1Display">
+			</crown-on>
+		</davinci-value-display>
+		<davinci-value-display id="ValueDisplay3" label="Centre">
+			<crown-on property="value"
+				crown-event="picoScan/UpdateCentrePointDisplay">
 			</crown-on>
 		</davinci-value-display>
 		<davinci-value-display id="ValueDisplay2" label="Point2">
 			<crown-on property="value" crown-event="picoScan/UpdatePoint2Display">
 			</crown-on>
 		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay3" label="Centre">
-			<crown-on property="value"
-				crown-event="picoScan/UpdateCentrePointDisplay">
+		<davinci-value-display id="ValueDisplay7" label="Length (mm)">
+			<crown-on property="value" crown-event="picoScan/UpdateLengthDisplay">
 			</crown-on>
 		</davinci-value-display>
 		<h4 id="Heading42" style="height: 20">
@@ -26,14 +30,37 @@
 				crown-event="picoScan/Updatep1DistanceFromOriginDisplay">
 			</crown-on>
 		</davinci-value-display>
+		<davinci-value-display id="ValueDisplay4" label="Centre">
+			<crown-on property="value"
+				crown-event="picoScan/UpdateDistanceFromOriginDisplay">
+			</crown-on>
+		</davinci-value-display>
 		<davinci-value-display id="ValueDisplay6" label="Point2">
 			<crown-on property="value"
 				crown-event="picoScan/Updatep2DistanceFromOriginDisplay">
 			</crown-on>
 		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay4" label="Centre">
+	</layout-column>
+	<layout-column id="ColumnLayout2">
+		<h4 id="Heading43">Current Cubic Area Filter</h4>
+		<davinci-value-display id="ValueDisplay8" label="Vertex1">
 			<crown-on property="value"
-				crown-event="picoScan/UpdateDistanceFromOriginDisplay">
+				crown-event="picoScan/UpdateVertexADisplay">
+			</crown-on>
+		</davinci-value-display>
+		<davinci-value-display id="ValueDisplay9" label="Vertex2">
+			<crown-on property="value"
+				crown-event="picoScan/UpdateVertexBDisplay">
+			</crown-on>
+		</davinci-value-display>
+		<davinci-value-display id="ValueDisplay10" label="Vertex3">
+			<crown-on property="value"
+				crown-event="picoScan/UpdateVertexCDisplay">
+			</crown-on>
+		</davinci-value-display>
+		<davinci-value-display id="ValueDisplay11" label="Vertex4">
+			<crown-on property="value"
+				crown-event="picoScan/UpdateVertexDDisplay">
 			</crown-on>
 		</davinci-value-display>
 	</layout-column>

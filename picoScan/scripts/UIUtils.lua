@@ -1,45 +1,6 @@
 UiUtils = {}
 
 --[[
-  Wrapper to both add image to viewer and present
-
-  Params:
-  viewerHandle:View     Handle to the UI viewer object
-  image:Image           The image to show
-
-  Returns:
-  none
-
-  Author: Adrian Forbes
-]]
-function UiUtils.showImage(viewerHandle, image)
-  if image ~= nil then
-    viewerHandle:addImage(image)
-    viewerHandle:present('LIVE')
-  end
-end
-
---[[
-  Wrapper to both add pixel region to viewer and present
-
-  Params:
-  viewerHandle:View                 Handle to the UI viewer object
-  region:Image.PixelRegion          The pixel region to show
-  deco:View.PixelRegionDecoration   The decoration to apply to the pixel region
-
-  Returns:
-  none
-
-  Author: Adrian Forbes
-]]
-function UiUtils.showRegion(viewerHandle, region, deco)
-  if region ~= nil then
-    viewerHandle:addPixelRegion(region, deco)
-    viewerHandle:present('LIVE')
-  end
-end
-
---[[
   Converts a 2-dimensional table to a JSON string suitable for the AppSpace DynamicTable
   UI element. The members of the input table must be of type string or number; if any are
   not, their corresponding member in the JSON string will be a blank string. The first row
