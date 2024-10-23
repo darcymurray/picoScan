@@ -36,7 +36,7 @@ Viewer.ViewerPoints = View.create('ViewerPoints')
 -- Changeable cubic area filter
 local function containsPoint(table, pointX)
   for _, point in pairs(table) do
-    if point:getX() == pointX:getX() and point:getY() == pointX:getY() then 
+    if point:getX() == pointX:getX() and point:getY() == pointX:getY() then
       return true
     end
   end
@@ -114,3 +114,5 @@ Script.serveEvent('picoScan.UpdateVertexADisplay', 'UpdateVertexADisplay')
 Script.serveEvent('picoScan.UpdateVertexBDisplay', 'UpdateVertexBDisplay')
 Script.serveEvent('picoScan.UpdateVertexCDisplay', 'UpdateVertexCDisplay')
 Script.serveEvent('picoScan.UpdateVertexDDisplay', 'UpdateVertexDDisplay')
+
+

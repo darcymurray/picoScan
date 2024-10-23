@@ -45,7 +45,7 @@ end
 -- Scan handler (Scan is 2D Polar)
 function HandleOnNewScan(scan)
   -- Diagnostics
-  if Diagnostics.DiagnosticsDisplayInterval % 25 == 0 then Diagnostics.UpdateDiagnosticsDisplay() end
+  if Diagnostics.DiagnosticsDisplayInterval % 1 == 0 then Diagnostics.UpdateDiagnosticsDisplay() end
   Diagnostics.DiagnosticsDisplayInterval = Diagnostics.DiagnosticsDisplayInterval + 1
 
   -- Cubic Area Filter
@@ -84,7 +84,6 @@ function HandleOnNewScan(scan)
   Script.notifyEvent('Updatep2DistanceFromOriginDisplay', string.format('%.0f', tostring(p2D)))
   Script.notifyEvent('UpdateDistanceFromOriginDisplay', string.format('%.0f', tostring(centreD)))
 end
-
 
 -- Tool: Calculating average #points per scan
 -- local test = #points3d
