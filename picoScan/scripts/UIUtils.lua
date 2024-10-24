@@ -63,3 +63,4 @@ function UiUtils.generateDynamicTableJsonString(tbl)
 
   return jsonString
 end
+

@@ -1,6 +1,7 @@
-require("Diagnostics")
+require("Serves")
+-- require("Diagnostics")
+require("CubicAreaFilter")
 require("Viewer")
-require("Decorations")
 require("Scanner")
 
 -- -- Other data output type receiver
@@ -8,3 +9,4 @@ require("Scanner")
 -- Socket:setInterface('ETH1')
 -- Socket:bind(2115)
 -- Socket:register('OnReceive', HandleOnNewScan)
+

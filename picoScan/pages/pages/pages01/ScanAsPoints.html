@@ -3,65 +3,100 @@
 		background="#FFF"
 		style="width: 75%; height: 100%; flex-shrink: 0">
 	</sick-viewer2d>
-	<layout-column id="ColumnLayout1">
-		<h4 id="Heading41">Line Segment</h4>
-		<davinci-value-display id="ValueDisplay1" label="Point1">
-			<crown-on property="value" crown-event="picoScan/UpdatePoint1Display">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay3" label="Centre">
-			<crown-on property="value"
-				crown-event="picoScan/UpdateCentrePointDisplay">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay2" label="Point2">
-			<crown-on property="value" crown-event="picoScan/UpdatePoint2Display">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay7" label="Length (mm)">
-			<crown-on property="value" crown-event="picoScan/UpdateLengthDisplay">
-			</crown-on>
-		</davinci-value-display>
-		<h4 id="Heading42" style="height: 20">
-			Radial Distances From Origin
-		</h4>
-		<davinci-value-display id="ValueDisplay5" label="Point1">
-			<crown-on property="value"
-				crown-event="picoScan/Updatep1DistanceFromOriginDisplay">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay4" label="Centre">
-			<crown-on property="value"
-				crown-event="picoScan/UpdateDistanceFromOriginDisplay">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay6" label="Point2">
-			<crown-on property="value"
-				crown-event="picoScan/Updatep2DistanceFromOriginDisplay">
-			</crown-on>
-		</davinci-value-display>
-	</layout-column>
-	<layout-column id="ColumnLayout2">
-		<h4 id="Heading43">Current Cubic Area Filter</h4>
-		<davinci-value-display id="ValueDisplay8" label="Vertex1">
-			<crown-on property="value"
-				crown-event="picoScan/UpdateVertexADisplay">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay9" label="Vertex2">
-			<crown-on property="value"
-				crown-event="picoScan/UpdateVertexBDisplay">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay10" label="Vertex3">
-			<crown-on property="value"
-				crown-event="picoScan/UpdateVertexCDisplay">
-			</crown-on>
-		</davinci-value-display>
-		<davinci-value-display id="ValueDisplay11" label="Vertex4">
-			<crown-on property="value"
-				crown-event="picoScan/UpdateVertexDDisplay">
-			</crown-on>
-		</davinci-value-display>
+	<layout-column id="ColumnLayout3">
+		<layout-row id="RowLayout4">
+			<layout-column id="ColumnLayout2">
+				<h4 id="Heading43">Current Cubic Area Filter</h4>
+				<davinci-value-display id="ValueDisplay8" label="Vertex1">
+					<crown-on property="value"
+						crown-event="picoScan/UpdateVertexADisplay">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay9" label="Vertex2">
+					<crown-on property="value"
+						crown-event="picoScan/UpdateVertexBDisplay">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay10" label="Vertex3">
+					<crown-on property="value"
+						crown-event="picoScan/UpdateVertexCDisplay">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay11" label="Vertex4">
+					<crown-on property="value"
+						crown-event="picoScan/UpdateVertexDDisplay">
+					</crown-on>
+				</davinci-value-display>
+			</layout-column>
+			<layout-column id="ColumnLayout5">
+				<h4 id="Heading44">Functions</h4>
+				<davinci-checkbox id="Checkbox2">
+					<span>Cubic Area Filter</span>
+					<crown-set event="change" crown-function="picoScan/OnCAFButtonChange"
+						protocol="crownMSGPACK" crown-path="change">
+					</crown-set>
+					<crown-on property="checked"
+						crown-event="picoScan/UpdateCAFEnabledDisplay">
+					</crown-on>
+				</davinci-checkbox>
+				<davinci-button id="Button1" type="primary" icon-position="append">
+					<span>Fit Line</span>
+					<crown-set event="submit" crown-function="picoScan/OnFitLineSubmit"
+						protocol="crownMSGPACK">
+					</crown-set>
+				</davinci-button>
+				<davinci-button id="Button2" type="primary" icon-position="append">
+					<span>Fit 1000 Lines</span>
+					<crown-set event="submit"
+						crown-function="picoScan/OnFitManyLinesSubmit"
+						protocol="crownMSGPACK">
+					</crown-set>
+				</davinci-button>
+			</layout-column>
+		</layout-row>
+		<layout-row id="RowLayout2">
+			<layout-column id="ColumnLayout1">
+				<h4 id="Heading41">Line Segment</h4>
+				<davinci-value-display id="ValueDisplay1" label="Point1">
+					<crown-on property="value" crown-event="picoScan/UpdatePoint1Display">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay3" label="Centre">
+					<crown-on property="value"
+						crown-event="picoScan/UpdateCentrePointDisplay">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay2" label="Point2">
+					<crown-on property="value" crown-event="picoScan/UpdatePoint2Display">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay7" label="Length (mm)">
+					<crown-on property="value" crown-event="picoScan/UpdateLengthDisplay">
+					</crown-on>
+				</davinci-value-display>
+			</layout-column>
+		</layout-row>
+		<layout-row id="RowLayout3">
+			<layout-column id="ColumnLayout4">
+				<h4 id="Heading42" style="height: 20">
+					Radial Distances From Origin
+				</h4>
+				<davinci-value-display id="ValueDisplay5" label="Point1">
+					<crown-on property="value"
+						crown-event="picoScan/Updatep1DistanceFromOriginDisplay">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay4" label="Centre">
+					<crown-on property="value"
+						crown-event="picoScan/UpdateDistanceFromOriginDisplay">
+					</crown-on>
+				</davinci-value-display>
+				<davinci-value-display id="ValueDisplay6" label="Point2">
+					<crown-on property="value"
+						crown-event="picoScan/Updatep2DistanceFromOriginDisplay">
+					</crown-on>
+				</davinci-value-display>
+			</layout-column>
+		</layout-row>
 	</layout-column>
 </layout-row>

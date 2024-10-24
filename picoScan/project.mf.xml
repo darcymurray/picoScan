@@ -104,6 +104,15 @@
                     <desc/>
                     <param desc="" multiplicity="1" name="parametername" type="string"/>
                 </event>
+                <event name="UpdateCAFEnabledDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="bool"/>
+                </event>
+                <function name="OnCAFButtonChange">
+                    <param multiplicity="1" name="change" type="bool"/>
+                </function>
+                <function name="OnFitLineSubmit"/>
+                <function name="OnFitManyLinesSubmit"/>
             </serves>
         </crown>
         <meta key="author">AppSpace Sample</meta>
