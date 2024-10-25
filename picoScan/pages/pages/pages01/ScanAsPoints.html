@@ -46,12 +46,17 @@
 					</crown-set>
 				</davinci-button>
 				<davinci-button id="Button2" type="primary" icon-position="append">
-					<span>Fit 1000 Lines</span>
+					<span>Fit 500 Lines</span>
 					<crown-set event="submit"
 						crown-function="picoScan/OnFitManyLinesSubmit"
 						protocol="crownMSGPACK">
 					</crown-set>
 				</davinci-button>
+				<davinci-value-display id="ValueDisplay12">
+					<crown-on property="value"
+						crown-event="picoScan/UpdateLineAvgDisplay">
+					</crown-on>
+				</davinci-value-display>
 			</layout-column>
 		</layout-row>
 		<layout-row id="RowLayout2">

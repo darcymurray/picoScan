@@ -108,6 +108,10 @@
                     <desc/>
                     <param desc="" multiplicity="1" name="parametername" type="bool"/>
                 </event>
+                <event name="UpdateLineAvgDisplay">
+                    <desc/>
+                    <param desc="" multiplicity="1" name="parametername" type="string"/>
+                </event>
                 <function name="OnCAFButtonChange">
                     <param multiplicity="1" name="change" type="bool"/>
                 </function>

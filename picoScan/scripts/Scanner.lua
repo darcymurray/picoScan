@@ -120,7 +120,8 @@ function Scanner.GetOnlySegmentLength()
   local points = Point.create(Scanner.X, Scanner.Y)
   Scanner.LineSegment, _ = Scanner.Fitter:fitLine(points)
   Scanner.LSP1, Scanner.LSP2, _ = AnalyseLineSegment(Scanner.LineSegment)
-  Scanner.ObjectLength = math.abs(Scanner.LSP1:getY() - Scanner.LSP2:getY())
+  Scanner.ObjectLength = math.abs(Scanner.LSP1:getX() - Scanner.LSP2:getX())
+  -- Scanner.ObjectLength = math.abs(Scanner.LSP1:getY() - Scanner.LSP2:getY())
   table.insert(Scanner.ObjectLengthList, Scanner.ObjectLength)
 
   if Scanner.LinesToFit == 0 then
@@ -130,8 +131,7 @@ function Scanner.GetOnlySegmentLength()
         sum = sum + Scanner.ObjectLengthList[i]
     end
     local result = sum / count
-    local debug = true
-    print(result)
+    Script.notifyEvent("UpdateLineAvgDisplay", tostring(result))
   end
 end
 
