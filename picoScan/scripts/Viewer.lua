@@ -7,6 +7,8 @@ end
 -- UI Viewers
 Viewer.ViewerPoints = View.create('ViewerPoints')
 Viewer.ViewerPoints:register("OnConnect", Viewer.UpdateSidePanelDisplay)
+Viewer.ViewerPointClouds = View.create('ViewerPointClouds')
+Viewer.ViewerProfiles = View.create('ViewerProfiles')
 
 -- Default Graph Decoration
 Viewer.Decoration = View.GraphDecoration.create()
@@ -57,4 +59,8 @@ Viewer.CAFDecoration = View.ShapeDecoration.create()
 Viewer.CAFDecoration:setPointSize(40.0)
 Viewer.CAFDecoration:setPointType('DOT')
 Viewer.CAFDecoration:setFillColor(255,0,0,255)
+
+-- Point cloud decoration
+Viewer.PointCloudDecoration = View.PointCloudDecoration.create()
+Viewer.PointCloudDecoration:setPointSize(3.0)
 
