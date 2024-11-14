@@ -16,6 +16,7 @@ Scanner.Transformer = Scan.Transform.create()
 Scanner.ScanProvider = Scan.Provider.RemoteScanner.create()
 Scanner.ScanProvider:setIPAddress('192.168.1.100')
 Scanner.ScanProvider:setSensorType('LMSX00')
+
 -- Scan handler (Scan is 2D Polar)
 function Scanner.HandleOnNewScan(scan)
   -- Apply cubic area filter
@@ -47,6 +48,13 @@ function Scanner.HandleOnNewScan(scan)
   end
 
   Viewer.ViewerPoints:present()
+
+  Viewer.ViewerPointClouds:addPointCloud(pointCloud, Viewer.PointCloudDecoration)
+  Viewer.ViewerPointClouds:present()
+
+  -- local profile = scan:toProfile()
+  -- Viewer.ViewerProfiles:addProfile(profile)
+  -- Viewer.ViewerProfiles:present()
 end
 Scanner.ScanProvider:register( 'OnNewScan', Scanner.HandleOnNewScan )
 
